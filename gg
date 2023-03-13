@@ -1,0 +1,47 @@
+// Define a class called Animal
+class Animal {
+  public void speak() {
+    System.out.println("The animal speaks.");
+  }
+}
+
+// Define a class called Dog that extends Animal
+class Dog extends Animal {
+  public void speak() {
+    System.out.println("The dog barks.");
+  }
+
+  public void wagTail() {
+    System.out.println("The dog wags its tail.");
+  }
+}
+
+// Define a class called Cat that extends Animal
+class Cat extends Animal {
+  public void speak() {
+    System.out.println("The cat meows.");
+  }
+
+  public void purr() {
+    System.out.println("The cat purrs.");
+  }
+}
+
+// Define a main class to run the program
+public class Main {
+  public static void main(String[] args) {
+    // Create a new Dog object and call its methods
+    Dog dog = new Dog();
+    dog.speak();    // Output: The dog barks.
+    dog.wagTail();  // Output: The dog wags its tail.
+
+    // Create a new Cat object and call its methods
+    Cat cat = new Cat();
+    cat.speak();    // Output: The cat meows.
+    cat.purr();     // Output: The cat purrs.
+
+    // Create a new Animal object and call its method
+    Animal animal = new Animal();
+    animal.speak(); // Output: The animal speaks.
+  }
+}
